@@ -1,0 +1,88 @@
+
+.....typescript is updated version of js,we have to declare variable type in typescript
+.....in typescript we have to link opnly js file in html
+
+    ......
+
+\*\*install globaly typescript commond
+--npm install -g typescript
+
+type-script benifits
+--check errors in compile time
+
+const num:number=10 "we have to pass only numbers here"
+
+\*\*data types in typescript
+1.number
+2.string
+3.boolean
+
+\*\*type of array
+
+let arr:string[]=["pavan","sanket","sss","ssewg"]
+let arr:any[]=[5,"pavan",88,true] or let arr=[5,"pavan",88,true]
+
+\*\*type of object
+
+let obj:{name:string,age:number,edu:boolean}={
+name:"pavan"
+age:325
+edu:true  
+}
+
+\*\*enum type in typescript
+
+enum Role {
+admine,pavan,sanket,radha
+}
+
+...how we get value of enum datatype
+console.log(Role.admine)
+
+\*\*union
+function Add(a:number |a:string){
+if(type of a==="number"){
+return a
+
+}else{
+return a.tostring()
+}
+}
+
+\*\*\*compile multtiple files in typecript
+
+---tsc -init
+---tsc -watch
+
+\*\*\*exclude and include in typescript
+
+-go in con fig file and then write include or exclude at the bottom of the code
+
+"exclude":[
+
+    "fileNo1.ts",
+   "fileNo1.ts",
+    "fileNo1.ts",
+    "fileNo1.ts",
+
+]
+
+"include":[
+
+    "fileNo1.ts",
+   "fileNo1.ts",
+    "fileNo1.ts",
+    "fileNo1.ts",
+
+]
+
+***rootdir and outdir
+
+--to store compile js    files in particular folder
+
+
+**code optimization in ts
+
+nousedlocals=true
+nousedparameter=true
+noimplicitereturn=true
